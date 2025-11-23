@@ -8,23 +8,29 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header container">
-    <div>
+  <header class="hero-header container">
+    <div class="hero-left">
       <h1 class="name">Shivam Shrey Chawla</h1>
       <div class="role">Senior Engineering Manager — Publicis Sapient</div>
       <div class="location">Malmö, Sweden</div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-    <nav class="links">
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#skills">Skills</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
-    </nav>
+
+    <div class="hero-right">
+      <div class="photo-wrap">
+        <img src="/mnt/data/Shrey_Color.png" alt="Shivam Shrey Chawla" class="photo"/>
+      </div>
+    </div>
   </header>
 
   <main class="container">
-    <section id="about" class="card">
+    <section id="about" class="card colorful-card">
       <h2>Summary</h2>
       <p>Senior Engineering Manager with 15+ years of experience leading engineering teams to deliver scalable, customer-focused digital products. Expertise in platform engineering, backend development, API integrations, DevOps, and Azure cloud infrastructure. I focus on delivery predictability, technical governance, and mentoring teams to improve outcomes.</p>
     </section>
@@ -45,7 +51,7 @@
       </div>
     </section>
 
-    <section id="skills" class="card">
+    <section id="skills" class="card colorful-card-2">
       <h2>Top skills & certifications</h2>
       <ul class="bullets">
         <li>Platform engineering, API development, cloud (Azure)</li>
@@ -56,7 +62,7 @@
       <h3>Certifications</h3>
       <ul class="bullets">
         <li>SAFe® Agilist, SAFe® Scrum Master, SAFe® Product Owner/Product Manager</li>
-        <li>Microsoft Certified: Azure Fundamentals; Data & AI fundamentals (as listed in profile)</li>
+        <li>Microsoft Certified: Azure Fundamentals; Data & AI fundamentals</li>
       </ul>
     </section>
 
@@ -72,6 +78,10 @@
       <p>Email: <a href="mailto:chawlashivamshrey@gmail.com">chawlashivamshrey@gmail.com</a></p>
       <p>LinkedIn: <a href="https://www.linkedin.com/in/shivamshreychawla" target="_blank" rel="noopener">linkedin.com/in/shivamshreychawla</a></p>
     </section>
+
+    <footer class="footer">
+      <p>Profile content adapted from your LinkedIn export.</p>
+    </footer>
   </main>
 </body>
 </html>
