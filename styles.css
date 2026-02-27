@@ -1,175 +1,130 @@
 :root {
-  --primary: #0f1c2e;       /* deep navy */
-  --accent: #c6a85e;        /* muted gold */
-  --light-grey: #f4f6f8;
-  --mid-grey: #6b7280;
-  --text: #1a1a1a;
+  --primary:#0f1c2e;
+  --accent:#c6a85e;
+  --light:#f5f7fa;
+  --text:#1a1a1a;
 }
 
 body {
-  margin: 0;
-  font-family: "Segoe UI", Arial, sans-serif;
-  color: var(--text);
-  background: #ffffff;
-  line-height: 1.7;
+  margin:0;
+  font-family:"Segoe UI", Arial, sans-serif;
+  color:var(--text);
+  background:white;
+  line-height:1.7;
 }
 
 .container {
-  width: 85%;
-  max-width: 1100px;
-  margin: auto;
+  width:85%;
+  max-width:1150px;
+  margin:auto;
 }
 
 .narrow {
-  max-width: 800px;
+  max-width:850px;
 }
 
-/* ---------------- HERO ---------------- */
-
 .hero {
-  padding: 90px 0;
-  background: var(--primary);
-  color: white;
+  background:var(--primary);
+  color:white;
+  padding:90px 0;
 }
 
 .hero-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
 }
 
 .hero h1 {
-  font-size: 40px;
-  margin-bottom: 8px;
-  font-weight: 600;
+  font-size:42px;
+  margin-bottom:8px;
 }
 
 .title {
-  font-size: 18px;
-  color: #d1d5db;
-  margin: 0;
+  font-size:20px;
+  color:#d1d5db;
 }
 
 .location {
-  color: #9ca3af;
+  color:#9ca3af;
 }
 
 .contact {
-  margin-top: 14px;
-  font-size: 14px;
+  margin-top:15px;
+  display:flex;
+  gap:25px;
 }
 
 .contact a {
-  color: var(--accent);
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.contact a:hover {
-  text-decoration: underline;
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:500;
+  display:flex;
+  align-items:center;
+  gap:8px;
 }
 
 .hero-image img {
-  width: 170px;
-  border-radius: 50%;
-  border: 3px solid var(--accent);
-  box-shadow: 0 10px 35px rgba(0,0,0,0.4);
+  width:180px;
+  border-radius:50%;
+  border:4px solid var(--accent);
 }
 
-/* ---------------- SECTIONS ---------------- */
-
 .section {
-  padding: 80px 0;
+  padding:80px 0;
 }
 
 .grey {
-  background: var(--light-grey);
+  background:var(--light);
 }
 
 h2 {
-  font-size: 26px;
-  margin-bottom: 35px;
-  font-weight: 600;
-  position: relative;
+  font-size:26px;
+  margin-bottom:35px;
+  position:relative;
 }
 
 h2::after {
-  content: "";
-  width: 60px;
-  height: 3px;
-  background: var(--accent);
-  position: absolute;
-  left: 0;
-  bottom: -10px;
+  content:"";
+  width:60px;
+  height:3px;
+  background:var(--accent);
+  position:absolute;
+  left:0;
+  bottom:-10px;
 }
 
-h3 {
-  font-size: 18px;
-  margin-bottom: 8px;
-  font-weight: 600;
+.pill-container span {
+  display:inline-block;
+  padding:8px 14px;
+  margin:6px;
+  background:white;
+  border:1px solid #ddd;
+  border-radius:20px;
 }
 
-/* ---------------- GRID ---------------- */
-
-.impact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
+.experience-card {
+  background:white;
+  padding:35px;
+  margin-bottom:40px;
+  border-left:5px solid var(--accent);
+  box-shadow:0 8px 25px rgba(0,0,0,0.05);
 }
 
-.impact-grid div {
-  background: white;
-  padding: 25px;
-  border-left: 4px solid var(--accent);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+.skill-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:50px;
 }
 
-/* ---------------- ENGAGEMENTS ---------------- */
-
-.engagement {
-  margin-bottom: 35px;
-  padding: 25px;
-  background: white;
-  border-left: 4px solid var(--accent);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+.bullet-list {
+  padding-left:20px;
+  margin-bottom:30px;
 }
-
-.engagement h3 {
-  color: var(--primary);
-}
-
-/* ---------------- TWO COLUMN ---------------- */
-
-.two-col {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-}
-
-/* ---------------- FOOTER ---------------- */
 
 footer {
-  background: var(--primary);
-  color: #d1d5db;
-  padding: 35px 0;
-  text-align: center;
-  font-size: 14px;
-}
-
-/* ---------------- RESPONSIVE ---------------- */
-
-@media (max-width: 900px) {
-  .hero-inner {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .hero-image {
-    margin-top: 30px;
-  }
-
-  .impact-grid,
-  .two-col {
-    grid-template-columns: 1fr;
-  }
+  background:var(--primary);
+  color:#d1d5db;
+  padding:35px 0;
+  text-align:center;
 }
